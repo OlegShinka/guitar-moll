@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url(https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700,800&display=swap);
+}
+
+@font-face {
+  font-family: "CalSans Semibold", sans-serif;
+  font-weight: 600;
+  src: url("../fonts/CalSans-SemiBold.woff2") format("woff2");
+  /* url("../fonts/CalSans-SemiBold.woff") format("woff"); */
+  font-display: swap;
+}

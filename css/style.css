@@ -1,0 +1,155 @@
+@import url("null.css");
+@import url("font.css");
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.wrapper > main {
+  /* flex-grow: 1; */
+  flex: 1 1 auto;
+}
+
+/* селектор атрибуту, застосовується до класів де є __container */
+[class*="__container"] {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* зліва та справа обмежуючі падінги */
+  padding-inline: 15px;
+}
+
+/* [class*="__page"] {
+  margin-bottom: 70px;
+} */
+
+:root {
+  --font-family: "Poppins", sans-serif;
+  --second-family: "Cal Sans", sans-serif;
+  --main-color: #ffff;
+  --primary-color: #121212;
+  --second-color: #666;
+  --accent-color: #ff6428;
+}
+
+/* HEADER ---------------------------------------------*/
+
+.header__page {
+  position: absolute;
+  display: flex;
+  gap: 131px;
+  align-items: center;
+  min-height: 152px;
+}
+.header__container {
+}
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logo-icon {
+}
+.logo-label {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 24px;
+  color: #121212;
+}
+.main-nav {
+}
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 56px;
+}
+.nav-item {
+}
+.nav-link {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(18, 18, 18, 0.4);
+}
+
+/* HERO ---------------------------------------------*/
+
+.hero {
+}
+.hero__container {
+}
+.conrainer_hero {
+  display: flex;
+}
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  padding-top: 227px;
+  padding-bottom: 20px;
+  flex: 1 0 50%;
+}
+.hero_title {
+  color: #121212;
+  font-family: var(--second-family);
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 67.2px;
+  margin-bottom: 16px;
+}
+.hero-text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  color: var(--second-color);
+  max-width: 398px;
+  margin-bottom: 33px;
+}
+.hero_action {
+  display: flex;
+  align-items: center;
+}
+.hero_get-app {
+  font-family: var(--font-family);
+  font-weight: 600;
+  color: var(--main-color);
+  background-color: var(--accent-color);
+  border-radius: 40px;
+  padding: 18px 48px;
+  /* width: 192px;
+  height: 60px; */
+}
+.hero_get-app:not(:last-child) {
+  margin-right: 40px;
+}
+.android-icon {
+  margin-right: 26px;
+}
+.hero_decor {
+  flex: 1 0 50%;
+  margin-right: -120px;
+}
+.hero_image {
+  max-width: 672px;
+  position: relative;
+  display: inline-block;
+}
+.hero_image::after {
+  content: "";
+
+  background-image: url("../img/hero/Group\ 5189.png");
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  position: absolute;
+  bottom: 0;
+  right: 36.2%;
+  transform: translate(0, 50%);
+}
