@@ -19,12 +19,14 @@
             </a>
             <nav class="main-nav">
               <ul class="nav-list">
-                <li class="nav-item"><a href="#" class="nav-link">Store</a></li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Collections</a>
+                  <a href="#store" class="nav-link">Store</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Support</a>
+                  <a href="#collctions" class="nav-link">Collections</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#support" class="nav-link">Support</a>
                 </li>
               </ul>
             </nav>
@@ -32,24 +34,32 @@
         </div>
       </header>
       <main>
+        <!-- section Hero ------------------------------------- -->
+
         <section class="hero">
           <div class="hero__container conrainer_hero">
             <div class="hero_content">
-              <h1 class="hero_title">Browse top quality Guitars online</h1>
+              <h1 class="hero_title">
+                Browse top quality <span>Guitars</span> online
+              </h1>
               <p class="hero-text">
                 Explore 50k+ latest collections of branded guitars online with
                 Rhythm.
               </p>
               <div class="hero_action">
                 <a href="" class="hero_get-app">Get the App</a>
-                <svg class="android-icon" width="32" height="32">
-                  <use
-                    href="./img/svg/rhythm-icons.svg#icon-Android-logo"
-                  ></use>
-                </svg>
-                <svg class="android-icon" width="32" height="32">
-                  <use href="./img/svg/rhythm-icons.svg#icon-Apple-logo"></use>
-                </svg>
+                <div class="hero_get-icons">
+                  <svg class="android-icon" width="32" height="32">
+                    <use
+                      href="./img/svg/rhythm-icons.svg#icon-Android-logo"
+                    ></use>
+                  </svg>
+                  <svg class="android-icon" width="32" height="32">
+                    <use
+                      href="./img/svg/rhythm-icons.svg#icon-Apple-logo"
+                    ></use>
+                  </svg>
+                </div>
               </div>
             </div>
             <div class="hero_decor">
@@ -57,13 +67,263 @@
                 <img
                   src="./img/hero/hero-bg.png"
                   alt="hero-image"
-                  class="hero-img"
+                  class="hero-pic"
                 />
               </div>
             </div>
           </div>
         </section>
+
+        <!-- section Store ------------------------------------- -->
+
+        <section class="store" id="store">
+          <div class="store__container">
+            <h2 class="store_title title">Check out the <span>Store</span></h2>
+            <div class="store_body">
+              <div class="store__header">
+                <div class="store__header-title">NEW ON THE BOARD</div>
+                <a href="" class="store__header-link">view all</a>
+              </div>
+              <ul class="store__items">
+                <li class="store__item">
+                  <a href="#" class="store__item-link">
+                    <img
+                      src="./img/store/item-01.jpg"
+                      alt=""
+                      class="store__item-pic"
+                    />
+                    <h3 class="store__item-label">The Essential Les Paul</h3>
+                    <p class="store__item-price">$1,299.00</p>
+                  </a>
+                </li>
+                <li class="store__item">
+                  <a href="#" class="store__item-link">
+                    <img
+                      src="./img/store/item-02.jpg"
+                      alt=""
+                      class="store__item-pic"
+                    />
+                    <h3 class="store__item-label">J-45 Standard</h3>
+                    <p class="store__item-price">$1,299.00</p>
+                  </a>
+                </li>
+                <li class="store__item">
+                  <a href="#" class="store__item-link">
+                    <img
+                      src="./img/store/item-03.jpg"
+                      alt=""
+                      class="store__item-pic"
+                    />
+                    <h3 class="store__item-label">Hummingbird Standard</h3>
+                    <p class="store__item-price">$1,299.00</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="store_body">
+              <div class="store__header">
+                <div class="store__header-title">TOP SELLING</div>
+                <a href="" class="store__header-link">view all</a>
+              </div>
+              <ul class="store__items">
+                <li class="store__item">
+                  <a href="#" class="store__item-link">
+                    <img
+                      src="./img/store/item-04.jpg"
+                      alt=""
+                      class="store__item-pic"
+                    />
+                    <h3 class="store__item-label">
+                      Active Precision Bass® PH V
+                    </h3>
+                    <p class="store__item-price">$1,299.00</p>
+                  </a>
+                </li>
+                <li class="store__item">
+                  <a href="#" class="store__item-link">
+                    <img
+                      src="./img/store/item-05.jpg"
+                      alt=""
+                      class="store__item-pic"
+                    />
+                    <h3 class="store__item-label">Redondo Special</h3>
+                    <p class="store__item-price">$1,299.00</p>
+                  </a>
+                </li>
+                <li class="store__item">
+                  <a href="#" class="store__item-link">
+                    <img
+                      src="./img/store/item-06.jpg"
+                      alt=""
+                      class="store__item-pic"
+                    />
+                    <h3 class="store__item-label">
+                      Professional II Stratocaster®
+                    </h3>
+                    <p class="store__item-price">$1,299.00</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- section Categories ------------------------------------- -->
+
+        <section class="categories">
+          <div class="categories__container">
+            <h2 class="categories__title title">
+              Choose based on <span>Categories</span>
+            </h2>
+            <ul class="categories__items">
+              <li class="categories__item">
+                <a href="" class="categories_link">
+                  <div class="categories_label">Acoustic</div>
+                  <div class="categories-pic">
+                    <img
+                      src="./img/categories/categories01.jpg"
+                      alt=""
+                      class="categories__image"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="categories__item">
+                <a href="" class="categories_link">
+                  <div class="categories_label">Electric</div>
+                  <div class="categories-pic">
+                    <img
+                      src="./img/categories/categories02.jpg"
+                      alt=""
+                      class="categories__image"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="categories__item">
+                <a href="" class="categories_link">
+                  <div class="categories_label">Basses</div>
+                  <div class="categories-pic">
+                    <img
+                      src="./img/categories/categories03.jpg"
+                      alt=""
+                      class="categories__image"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="categories__item">
+                <a href="" class="categories_link">
+                  <div class="categories_label">Collections</div>
+                  <div class="categories-pic">
+                    <img
+                      src="./img/categories/categories04.jpg"
+                      alt=""
+                      class="categories__image"
+                    />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="brands">
+          <div class="brands__container">
+            <h2 class="brands_title title">
+              Featuring the <span>Best Brands</span>
+            </h2>
+            <ul class="brands_items">
+              <li class="brands_item">
+                <div class="brands-pic">
+                  <img src="./img/brands/image01.jpg" alt="brand" />
+                </div>
+              </li>
+              <li class="brands_item">
+                <div class="brands-pic">
+                  <img src="./img/brands/image02.jpg" alt="brand" />
+                </div>
+              </li>
+              <li class="brands_item">
+                <div class="brands-pic">
+                  <img src="./img/brands/image03.jpg" alt="brand" />
+                </div>
+              </li>
+              <li class="brands_item">
+                <div class="brands-pic">
+                  <img src="./img/brands/image04.jpg" alt="brand" />
+                </div>
+              </li>
+              <li class="brands_item">
+                <div class="brands-pic">
+                  <img src="./img/brands/image05.jpg" alt="brand" />
+                </div>
+              </li>
+              <li class="brands_item">
+                <div class="brands-pic">
+                  <img src="./img/brands/image06.jpg" alt="brand" />
+                </div>
+              </li>
+              <li class="brands_item">
+                <div class="brands-pic">
+                  <img src="./img/brands/image07.jpg" alt="brand" />
+                </div>
+              </li>
+              <li class="brands_item">
+                <div class="brands-pic">
+                  <img src="./img/brands/image08.jpg" alt="brand" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="benefits">
+          <div class="benefits__container container_benefits">
+            <div class="benefits_title title">Why try <span>Rhythm?</span></div>
+            <ul class="benefits_items">
+              <li class="benefits_item">
+                <div class="box_link">
+                  <svg class="icon_link" width="32" height="32">
+                    <use href="./img/svg/rhythm-icons.svg#icon-group-01"></use>
+                  </svg>
+                </div>
+                <h3 class="benefits_label">Smooth Browsing</h3>
+                <div class="benefits_desc">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </li>
+              <li class="benefits_item">
+                <div class="box_link">
+                  <svg class="icon_link" width="32" height="32">
+                    <use href="./img/svg/rhythm-icons.svg#icon-group-02"></use>
+                  </svg>
+                </div>
+                <h3 class="benefits_label">Smooth Browsing</h3>
+                <div class="benefits_desc">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </li>
+              <li class="benefits_item">
+                <div class="box_link">
+                  <svg class="icon_link" width="32" height="32">
+                    <use href="./img/svg/rhythm-icons.svg#icon-group-03"></use>
+                  </svg>
+                </div>
+                <h3 class="benefits_label">Smooth Browsing</h3>
+                <div class="benefits_desc">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
       </main>
+
       <footer>
         <div class="footer__container">
           <div class="footer__page">
@@ -101,5 +361,7 @@
         </div>
       </footer>
     </div>
+
+    <script defer src="./js/burger.js"></script>
   </body>
 </html>
