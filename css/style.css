@@ -594,3 +594,229 @@ body {
   color: #666;
   width: 230px;
 }
+
+/* section Reviews ------------------------------------------------*/
+
+.reviews {
+  padding-top: 203px;
+  padding-bottom: 240px;
+}
+.reviews__container {
+}
+.reviews_title {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 44px;
+  color: #000;
+  padding-bottom: 115px;
+}
+.reviews_title span {
+  color: var(--accent-color);
+}
+
+.reviews-swiper {
+}
+
+.swiper-wrapper {
+}
+.reviews-slide {
+}
+.reviews_body {
+  display: flex;
+  /* gap: 71px; */
+  align-items: center;
+  padding: 0 5px;
+  overflow: hidden;
+}
+@media screen and (max-width: 1000px) {
+  .reviews_body {
+    display: flex;
+    flex-direction: column;
+    /* gap: 71px; */
+    align-items: center;
+    padding: 0 5px;
+  }
+}
+.reviews_desc {
+  flex: 1 0 50%;
+  margin-bottom: 45px;
+}
+.reviews_text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 160%;
+  max-width: 524px;
+  color: var(--second-color);
+}
+.reviews_text:not(:last-child) {
+  margin-bottom: 56px;
+}
+.reviews_author {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 160%;
+  color: var(--primary-color);
+}
+.reviews_position {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 160%;
+  letter-spacing: 0.08em;
+  color: var(--second-color);
+}
+.reviews_author:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.reviews_picture {
+  position: relative;
+  flex: 1 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reviews_picture::before {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  content: "";
+  width: 285px;
+  height: 359px;
+  background-image: url("../img/reviews/reviewsBG.jpg");
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 1000px) {
+  .reviews {
+    padding-bottom: 120px;
+  }
+  .reviews_picture {
+    margin-bottom: 55px;
+  }
+  .reviews_picture::before {
+    left: -80px;
+  }
+}
+.reviews_img {
+  position: relative;
+  width: 326px;
+  height: 341px;
+}
+
+.reviews_img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.reviews-pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 25px;
+}
+@media screen and (max-width: 1030px) {
+  .reviews-pagination {
+    justify-content: center;
+  }
+}
+.reviews-pagination .swiper-pagination-bullet {
+  opacity: 0.8;
+  background-color: var(--second-color);
+  border-radius: 20px;
+  width: 10px;
+  height: 16px;
+}
+.reviews-pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+  border-radius: 20px;
+  width: 24px;
+  height: 12px;
+}
+
+/* section Welcome --------------------------------------------- */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.welcome {
+  padding-bottom: 120px;
+}
+.welcome__container {
+  position: relative;
+}
+.visually-hidden {
+}
+.welcome_body {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .welcome {
+    padding-bottom: 80px;
+  }
+  .welcome_body {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5px;
+  }
+}
+.welcome_content {
+  flex: 1 0 50%;
+}
+.welcome_slogan {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 140%;
+  text-align: left;
+  color: #000;
+}
+@media screen and (max-width: 450px) {
+  .welcome_slogan {
+    font-size: 44px;
+  }
+}
+.welcome_slogan:not(:last-child) {
+  margin-bottom: 60px;
+}
+.welcome_slogan span {
+  color: var(--accent-color);
+}
+.welcome_items {
+  display: flex;
+  gap: 27px;
+}
+
+@media screen and (max-width: 1000px) {
+  .welcome_items {
+    justify-content: center;
+  }
+}
+.welcome_item {
+}
+.welcome_item_link {
+}
+.welcome_item_img {
+}
+.welcome_decor {
+  flex: 1 0 50%;
+}
